@@ -1,2 +1,1 @@
-# ohtu-2020
-Ohjelmistotuotanto, syksy 2020 (HY)
+# Ohjelmistotuotanto, syksy 2020 - Tehtävät
