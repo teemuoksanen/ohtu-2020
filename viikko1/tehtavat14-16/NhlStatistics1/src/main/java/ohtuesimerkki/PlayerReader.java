@@ -4,8 +4,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import ohtuesimerkki.Player;
 
-public class PlayerReader {
+public class PlayerReader implements Reader {
 
     private Scanner scanner;
 
