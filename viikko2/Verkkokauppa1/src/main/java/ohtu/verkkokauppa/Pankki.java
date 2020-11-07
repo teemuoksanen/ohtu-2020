@@ -11,7 +11,7 @@ public class Pankki implements PankkiInterface {
 
         return instanssi;
     }
-    private Kirjanpito kirjanpito;
+    private KirjanpitoInterface kirjanpito;
 
     public Pankki() {
         kirjanpito = Kirjanpito.getInstance();
