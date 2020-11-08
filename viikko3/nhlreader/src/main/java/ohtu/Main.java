@@ -4,6 +4,9 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import org.apache.http.client.fluent.Request;
 import java.util.Date;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Collections;
 
 public class Main {
   public static void main(String[] args) throws IOException {
@@ -13,6 +16,8 @@ public class Main {
 
     Gson mapper = new Gson();
     Player[] players = mapper.fromJson(bodyText, Player[].class);
+    List<Player> playerlist = Arrays.asList(players);
+    Collections.sort(playerlist,Collections.reverseOrder());
 
     Date dNow = new Date();
     
