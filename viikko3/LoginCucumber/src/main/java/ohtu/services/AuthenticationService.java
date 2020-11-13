@@ -4,6 +4,8 @@ import ohtu.domain.User;
 import java.util.ArrayList;
 import java.util.List;
 import ohtu.data_access.UserDao;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AuthenticationService {
 
@@ -39,7 +41,11 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
-        // validity check of username and password
+        if (!Pattern.matches("[a-z]{3,}", username) ||
+            password.length() < 8 ||
+            Pattern.matches("[A-Za-z]*", password) ) {
+            return true;
+        }
 
         return false;
     }
