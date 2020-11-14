@@ -95,6 +95,26 @@ public class Stepdefs {
     public void userIsNotLoggedInAndErrorMessageIsGiven(String error) {
         pageHasContent(error);
         pageHasContent("Create username and give password");
+    }    
+    
+    @Given("user with username {string} with password {string} is successfully created")
+    public void userIsSuccessfullyCreated(String username, String password) {
+        newUserIsSelected();
+        createUserWith(username, password, password);
+        pageHasContent("Welcome to Ohtu Application!");
+        WebElement element = driver.findElement(By.linkText("continue to application mainpage"));
+        element.click();
+        element = driver.findElement(By.linkText("logout"));
+        element.click();
+    }
+    
+    @Given("user with username {string} and password {string} is tried to be created")
+    public void userIsTriedToBeCreated(String username, String password) {
+        newUserIsSelected();
+        createUserWith(username, password, password);
+        pageHasContent("username should have at least 3 characters");
+        WebElement element = driver.findElement(By.linkText("back to home"));
+        element.click();
     }
     
     @After
