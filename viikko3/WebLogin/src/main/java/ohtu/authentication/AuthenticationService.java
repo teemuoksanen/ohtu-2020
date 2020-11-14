@@ -3,6 +3,8 @@ package ohtu.authentication;
 import ohtu.data_access.UserDao;
 import ohtu.domain.User;
 import ohtu.util.CreationStatus;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AuthenticationService {
 
@@ -32,6 +34,14 @@ public class AuthenticationService {
 
         if (username.length()<3 ) {
             status.addError("username should have at least 3 characters");
+        }
+
+        if (password.length() < 8 || Pattern.matches("[A-Za-z]*", password) ) {
+            status.addError("password should have at least 8 characters");
+        }
+
+        if (!password.equals(passwordConfirmation)) {
+            status.addError("password and password confirmation do not match");
         }
 
         if (status.isOk()) {
