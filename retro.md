@@ -1,0 +1,7 @@
+# Retrospektiivitekniikoista
+
+Retrospektiivin tarkoituksena on tarkastella tiimin omaa työskentelyprosessia. Retrospektiivissa katsotaan siis ajassa taaksepäin tarkastelemalla sitä, mitkä asiat ovat menneet tiimillä hyvin ja missä on vielä parantamisen varaa. Toki retrospektiivinkin vaikutukset kohdistuvat tulevaisuuteen - taaksepäin katsomisen perimmäisenä tarkoituksena on pohtia tiimin toimintatapoja sekä löytää ratkaisuja ongelmakohtiin, jotta työ seuraavissa sprinteissä sujuisi tehokkaammin.
+
+Erilaisia retrospektiivitekniikoita on useita ja niitä kehitetään koko ajan lisää. Tehtävänannossa esimerkkinä olivat [Start, Stop, Continue, More of, Less of Wheel](http://retrospectivewiki.org/index.php?title=Start,_Stop,_Continue,_More_of,_Less_of_Wheel) sekä [Glad, Sad, Mad](http://retrospectivewiki.org/index.php?title=Glad,_Sad,_Mad). Molemmissa tekniikoissa ideana on, että tiimin jäsenet kirjaavat ajatuksiaan ja kokemuksiaan sprintistä esimerkiksi post-it-lapuille ja kiinnittävät nämä tekniikoiden nimen mukaisten otsakkeiden alle. Vaikka otsikot ovat hieman erit, tausta-ajatukset molemmissa tekniikoissa ovat samanlaiset - ajatuksena on löytää positiivisia asioita, joita kannattaa edistää jatkossakin, sekä toisaalta negatiivisia asioita tai haasteita, joihin yritetään löytää ratkaisuja tulevissa sprinteissä.
+
+Tiimin tulisi valita erilaisista vaihtoehdoista itselleen sopiva tekniikka, ja toisaalta eri tekniikoita voi hyödyntää tarpeen mukaan projektin aikana.
