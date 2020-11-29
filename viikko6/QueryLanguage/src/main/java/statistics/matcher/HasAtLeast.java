@@ -11,7 +11,7 @@ public class HasAtLeast implements Matcher {
 
     public HasAtLeast(int value, String category) {
         this.value = value;
-        fieldName = "get"+Character.toUpperCase(category.charAt(0))+category.substring(1, category.length());
+        this.fieldName = "get"+Character.toUpperCase(category.charAt(0))+category.substring(1, category.length());
     }
 
     @Override
@@ -19,7 +19,7 @@ public class HasAtLeast implements Matcher {
         try {                                    
             Method method = p.getClass().getMethod(fieldName);
             int playersValue = (Integer)method.invoke(p);
-            return playersValue>=value;
+            return playersValue >= value;
             
         } catch (Exception ex) {
             System.out.println(ex);

@@ -12,7 +12,7 @@ public class Or implements Matcher {
 
   @Override
   public boolean matches(Player p) {
-      for (Matcher matcher : matchers) {
+      for (Matcher matcher : this.matchers) {
           if (matcher.matches(p)) {
               return true;
           }
