@@ -1,6 +1,6 @@
 package ohtu.kivipaperisakset;
 
-public class Tekoaly {
+public class Tekoaly implements Kone {
 
     int siirto;
 
@@ -21,7 +21,7 @@ public class Tekoaly {
         }
     }
 
-    void asetaSiirto(String ekanSiirto) {
+    public void asetaSiirto(String siirto) {
         // ei tehdä mitään 
     }
 }
